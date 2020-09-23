@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -20,25 +21,39 @@ body {
     "four five six equals"
     "one two three equals"
     "zero point clear equals";
-  border: 1px solid black;
   width: 500px;
-  height: 700px;
+  height: 600px;
   margin: 100px auto;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .btn {
+  background-color: white;
   border: 1px solid black;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.btn:active {
+  background-color: black;
 }
 
 .display {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
   grid-area: display;
   text-align: right;
+  font-size: 5rem;
+}
+
+.operator-btn {
+  background-color: #e9e9e9;
 }
 
 .equals {
   grid-area: equals;
-}
-
-.btn {
-  text-align: center;
+  background-color: #f47f54;
 }
